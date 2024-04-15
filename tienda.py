@@ -1,3 +1,9 @@
+# Info
+# Autor: Juan Cataldo [jcataldoaguilera@gmail.com]
+# Fecha: 2024-04-10
+# RLAB-23-02-09-0044-2
+#
+
 from producto import Producto
 
 class Tienda:
