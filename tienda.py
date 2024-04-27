@@ -13,9 +13,9 @@ class Tienda:
         self.__delivery = delivery
         
     def ingreso_productos(self, producto):
-        for prod in self.__productos:
-            if prod.get_nombre() == producto.get_nombre():
-                prod.mod_stock(producto.get_stock())
+        for p in self.__productos:
+            if p.get_nombre() == producto.get_nombre():
+                p.mod_stock(producto.get_stock())
                 return self.__productos.append(producto)
             
     def listar_productos(self):
@@ -28,6 +28,8 @@ class Tienda:
     def info_adicional(self, producto):
         return ""
     
+    def venta(self, nombre_producto, cantidad):
+        pass
 
 class Supermercado(Tienda):
     def info_adicional(self, producto):
